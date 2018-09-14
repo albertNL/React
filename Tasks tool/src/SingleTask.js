@@ -1,20 +1,13 @@
 import React, { Component } from "react";
 
-// class SingleTodo extends Component {
-// 	constructor() {
-// 		super();
-// 	}
-
-// 	render() {
-// 		return (
-// 			<li>{this.props.todo}<button onClick={this.props.delete}>X</button></li>
-// 		);
-// 	}
-// }
-
 const SingleTask = props => {
 	return (
-		<li>{props.task}<button onClick={props.delete}>X</button></li>
+		<table>
+			<tr>
+				<td><li>{props.task}</li></td>
+				<td><button onClick={props.delete}>Verwijder taak</button></td>
+			</tr>
+		</table>
 	);
 }
 
